@@ -1,0 +1,17 @@
+NAME="rpcsvc-proto"
+VERSION=1.3.1
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="RPC service protocol files and source generator"
+DESCRIPTION="This package contains rpcsvc proto.x files from glibc, which are
+missing in libtirpc. Additional it contains rpcgen, which is needed to create
+header files and sources from protocol files."
+HOMEPAGE="https://github.com/thkukuk/rpcsvc-proto"
+SRC_URI="https://github.com/thkukuk/rpcsvc-proto/archive/v${VERSION}/rpcsvc-proto-v${VERSION}.tar.gz"
+SRC_DIR="rpcsvc-proto-${VERSION}"
+PATCH_URI="1.3.1-cygwin-stat64.patch"
+
+LIBS+=" -lintl"
+
+# version is less; would need epoch to correctly obsolete
+#OBSOLETES="onc-rpc-devel rpcgen"
