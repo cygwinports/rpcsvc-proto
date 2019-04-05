@@ -1,5 +1,5 @@
 NAME="rpcsvc-proto"
-VERSION=1.3.1
+VERSION=1.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="RPC service protocol files and source generator"
